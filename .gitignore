@@ -1,0 +1,13 @@
+node_modules/
+.env
+/data/
+*.log
+.DS_Store
+
+.env.poll
+whatsapp.db
+*.db
+
+# Rust build artifacts
+wa-cli/target/
+wa-cli/Cargo.lock

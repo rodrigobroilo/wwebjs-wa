@@ -1,0 +1,18 @@
+{
+  "name": "wwebjs-wa",
+  "version": "1.0.0",
+  "description": "WhatsApp Web API server powered by whatsapp-web.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "^1.34.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

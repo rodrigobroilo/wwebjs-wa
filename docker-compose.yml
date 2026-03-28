@@ -1,0 +1,13 @@
+version: "3"
+services:
+  wwebjs:
+    build: .
+    container_name: wwebjs-wa
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    volumes:
+      - /volume1/docker/wwebjs/data:/data
+    environment:
+      - PORT=3100
+      - API_KEY=your-api-key-here
