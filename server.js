@@ -185,6 +185,7 @@ app.get('/qr', auth, async (req, res) => {
   if (!qrData) return res.json({ status: 'waiting_for_qr' });
   try {
     const img = await qrcode.toDataURL(qrData);
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.send(
       `<html><body style="display:flex;justify-content:center;align-items:center;` +
       `height:100vh;background:#111"><img src="${img}" style="width:400px;height:400px"/>` +
